@@ -1,0 +1,390 @@
+/*:root{
+    /**Se declara variable/
+    --primary: rgb(243,209,17); /*var(--primary)*/
+/*}*/
+
+html{
+    font-size: 62.5%;
+}
+*{
+   margin: 0;
+   padding: 0; 
+}
+body{
+    display: grid;
+    font-family: 'Alata', sans-serif;
+}
+img{
+    /*width: 108.89px;
+    height: 32;*/
+    border-radius: 2%;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin-top:0rem;
+}
+nav .logo{
+    height: 5rem;
+}
+nav i{
+    font-size:1.6rem;
+}
+header{
+    background-color: black;
+    color:white;
+    padding: 4rem;
+    border-bottom: 3px solid white;
+    border-bottom-width: 2rem;
+    
+}
+
+/*Header */
+
+
+header h2{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+}
+header p{
+    text-align: center;
+    font-size:2rem
+}
+header p strong{
+    font-weight:400;
+    border-bottom: 3px solid rgb(243,209,0);
+}
+header p strong:hover{
+    background-color: rgb(243,209,17);
+    color: black;
+    cursor: pointer;
+}
+
+.TodayPicks{
+    font-size: 2rem;
+    border-left: 3px solid rgb(243,209,0);  
+    padding-left: 3rem /*Espacio a la izquierda*/   
+}
+
+/*Header */
+.title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    margin:3rem 0 5rem 0;
+    text-align:center;
+    width:5rem;
+    /*border-bottom-width: 3px solid rgb(243,209,17);;*/
+    border-bottom: 3px solid rgb(243,209,17);
+}
+
+/*main-news*/
+.main-news{
+    position: relative;
+    width: 100%;
+
+}
+.main-news .text{
+    top: 40rem;
+    width: 70rem;
+}
+.main-news img{
+    width: 50rem;
+    height: 40rem;
+}
+.main-news .text h4{
+    text-transform:uppercase;
+    font-size:1.2rem;
+    letter-spacing: .5rem;
+}
+.main-news .text p{
+    font-size:2.5rem;
+    color: white;
+    text-align: left;
+}
+/*main-news*/
+.main-news img:hover{
+    transform: scale(1.05);
+}
+
+.text{
+    position: absolute;
+    top:20rem;
+    /*left:.5rem;*/
+    height: 15rem;
+    background-color: rgba(0,0,0,.4);
+}
+
+.read-icon{
+    display:flex;
+    justify-content: flex-start;
+    /*font-size:1.8rem;*/
+}
+
+.read-icon span{
+    font-size:1.5rem;
+    margin-left:1rem;
+}
+.read-icon i{
+    margin-top:.6rem;
+    margin-left:1rem;
+}
+/*
+.read-icon{
+    display:flex;
+    justify-content: flex-start;
+    /font-size:1.8rem;
+}
+
+.text .read-icon p{
+    font-size:1.5rem;
+    margin-left:1rem;
+}
+.text .read-icon i{
+    margin-top:.6rem;
+    margin-left:1rem;
+}
+
+*/
+/****************************************/
+
+.news1{
+    position: relative;
+    width: 100%;
+}
+
+.news1 .text{
+    top: 14rem;
+    width: 30rem;
+}
+
+
+/*****************************************/
+.news2{
+    width: 100%;
+    position: relative;
+}
+.news2 .text{
+    top: 14rem;
+    width: 30rem;
+}
+
+
+/*****************************************************/
+.mainGrid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: minmax(auto, auto);
+    row-gap: 2rem;
+}
+.grid-news{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(auto, auto);
+    row-gap: 2rem;
+}
+
+.main-news img{
+    width: 65rem;
+    height: 50rem;;
+}
+
+.grid-newsSub img{
+    width: 30rem;
+    height: 30rem;;
+}
+
+/*new */
+.grid-newsSub h4{
+    text-transform:uppercase;
+    font-size:1.2rem;
+    letter-spacing: .5rem;
+}
+
+.grid-newsSub p{
+    font-size:2.5rem;
+    color: white;
+    text-align: left;
+}
+
+/*.news1 img{
+    width: 20rem;
+    height: 20rem;
+}*/
+.grid-newsSub img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.grid-newsSub{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(auto, auto);
+    row-gap: 2rem;
+}
+
+.PicksGrid
+{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: minmax(auto, auto);
+    row-gap: 2rem;
+}
+
+.PicksGrid img{
+    width: 12rem;
+    height: 12rem;
+}
+
+.textTodays{
+    padding-left: 3rem;
+}
+
+.textTodays h4{
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.textTodays p{
+    font-family: 1.2rem;
+    font-weight: 350;
+    text-align:left;   
+     
+}
+
+
+.flexContainer{
+    display: flex;
+    margin-top:2rem;
+    width: 100%;
+}
+
+
+.PicksGrid{
+    width: 100%;
+    padding-left: 30rem;
+}
+
+.grid-news{
+    width: 70rem;
+    padding-left: 30rem;
+}
+
+.icons{
+    display: flex;
+    margin-top:1.5rem;    
+
+}
+.icons P{
+    font-size: 1.5rem;
+}
+
+
+.icons p, .icons i{
+    margin-right: .5rem;
+    border: none;
+}
+
+.fa-angle-double-down{
+    display: none;
+}
+
+
+
+@media(max-width:768px){
+
+
+
+    .icons .fa-search, .icons p{
+        display: none;
+    }
+    
+
+    .PicksGrid{
+        padding-left: 2rem;
+    }
+    .grid-news{
+        width: 40rem;
+        padding-left: 2rem;
+    }
+
+    header h2{
+        font-size:3rem;
+    }
+
+
+    body{
+        width: 40rem;
+    }
+
+    
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 45rem;
+        grid-template-rows: minmax(auto, auto);
+    }
+
+    .grid-news{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+        grid-template-rows: minmax(auto, auto);
+    }
+    
+    .grid-newsSub{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+        grid-template-rows: minmax(auto, auto);
+    }
+    
+    .grid-news img{
+        width: 95%;
+        height: 20rem;
+    }
+    
+    
+    .grid-news .text{
+        position: absolute;
+        top:5rem;
+        /*left:.5rem;*/
+        height: 15rem;
+        width:95%;
+        font-size: 1rem;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .main-news .text{
+        top: 9rem;
+        width: 40rem;
+    }
+    
+}
+
+
+/*header .icons i{
+    font-size:1.6rem;
+    margin-right: 1rem;
+    padding: .5px 1rem .5rem 0;
+    border: 1px solid #dedede;
+
+}
+
+header .icons i:last-childi{
+        border:none;
+}*/
+
+
